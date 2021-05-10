@@ -1,4 +1,4 @@
-package cn.com.xvym.learning.leetcode;
+package cn.com.xvym.learning.leetcode.no912;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
