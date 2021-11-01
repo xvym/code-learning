@@ -5,6 +5,8 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>leetcode</module>
+        <module>concurrent</module>
+        <module>action</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>

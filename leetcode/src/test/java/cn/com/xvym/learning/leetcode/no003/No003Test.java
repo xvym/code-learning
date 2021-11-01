@@ -3,8 +3,11 @@ package cn.com.xvym.learning.leetcode.no003;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * @Author: Xv
@@ -16,7 +19,7 @@ public class No003Test {
 
     private String s = "abcabcbb";
 
-    @Test
+//    @Test
     public void test() {
         log.info(String.valueOf(lengthOfLongestSubstring(s)));
     }
@@ -36,5 +39,13 @@ public class No003Test {
             res = Math.max(i - startIndex + 1, res);
         }
         return res;
+    }
+
+    public static void main(String[] args) {
+        String s = "cba";
+        char[] chars = s.toCharArray();
+        Arrays.sort(chars);
+        s = new String(chars);
+        System.out.println(s);
     }
 }
